@@ -216,3 +216,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit / Data
+*.md
+!README.md
+transcript_*.md
+summary_*.md
+action_items_*.md
+build_prompt_*.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
