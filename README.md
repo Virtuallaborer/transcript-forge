@@ -10,8 +10,9 @@ A local-first tool that turns any YouTube video into:
 
 Built with **Ollama**, **youtube-transcript-api**, and **Streamlit**.
 
-<img width="1920" height="1080" alt="screenshot2" src="https://github.com/user-attachments/assets/e92f9e00-8192-4768-a6f5-5e971fed2140" />
-<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/8b1b7c6b-7267-4da0-afb7-dc26d6cfa792" />
+<img width="893" height="523" alt="screenshot" src="https://github.com/user-attachments/assets/61775225-c688-4865-8d92-0c6f627a320d" />
+<img width="1547" height="805" alt="screenshot2" src="https://github.com/user-attachments/assets/03127492-6025-4f0a-b26b-d6ab693f7794" />
+
 
 
 ## Features
