@@ -1,24 +1,20 @@
 # Transcript Forge
 
-**YouTube → Summary → Action Items → Build Prompts**
+**YouTube → Transcript → Summary → Action Items → Build Prompts**  
+*A powerful local-first tool with Obsidian integration.*
 
-A **local-first** tool that turns any YouTube video into:
-- Clean markdown transcripts
-- Concise summaries
-- Key action items
-- Ready-to-use build prompts for AI coding assistants
-
-Built with **Ollama**, **youtube-transcript-api**, and **Streamlit**.
+Turn any YouTube video into clean markdown outputs: full transcripts, concise summaries, key action items, and ready-to-use AI coding/build prompts. Fully private — nothing leaves your machine.
 
 ![Demo](screenshot.png)
 
-## Features
+## ✨ Features
 
-- Works with **any YouTube video** (short or long)
-- Automatic **chunking** for videos > 20 minutes
-- **Download all** as ZIP or individual files
-- Fully local & private (nothing leaves your machine)
-- Customizable model and tone
+- **Any YouTube video** (short or long — auto-chunking for >20min)
+- **Local LLMs** via Ollama (custom model + tone)
+- **Obsidian integration**: Auto-saves notes + updates index in `MOCs/` (frontmatter support)
+- **ZIP download** + individual files
+- **Streamlit UI** — clean, fast, and user-friendly
+- Custom title override
 
 ## Quick Start
 
@@ -35,35 +31,47 @@ Built with **Ollama**, **youtube-transcript-api**, and **Streamlit**.
    pip install -r requirements.txt
    ```
 
-3. Run the app:
+3. Ensure **Ollama** is running locally with a model (e.g. `ollama pull qwen3:8b` or `llama3.2`).
+
+4. Run the app:
    ```bash
    streamlit run transcript_forge.py
    ```
 
-4. Paste any YouTube link and click **Forge Transcript**.
+5. Paste a YouTube URL/ID → **Forge Transcript** → Enjoy outputs + Obsidian sync!
 
 ## Requirements
 
+- Python 3.12+
 - [Ollama](https://ollama.com) running locally
-- A model like `qwen3:8b` or `llama3.2` (pull with `ollama pull qwen3:8b`)
+- Recommended models: `qwen3:8b`, `llama3.2`, `deepseek-coder-v2`
+
+See `requirements.txt` for Python packages.
 
 ## Screenshots
 
-![Main Interface](screenshot.png)
-*Main interface with model selection*
+(We'll update these in a later step with current UI + new features)
 
-![Processing](screenshot2.png)
-*Chunked processing for long videos*
+![Main Interface](screenshot.png)  
+*Main interface with model/tone selection*
+
+![Processing](screenshot2.png)  
+*Chunked processing + Obsidian save*
 
 ## Tech Stack
 
-- **youtube-transcript-api**
-- **Ollama** (local LLMs)
-- **Streamlit** (beautiful UI)
+- `youtube-transcript-api`
+- `ollama` (local inference)
+- `streamlit`
+- Obsidian vault integration
+
+## Project Status
+
+Functional + tested. Ready for daily use and sharing. Future: Multi-agent orchestration.
 
 ## Contributing
 
-Pull requests welcome! Open an issue for bugs or ideas.
+PRs welcome! Open issues for bugs, feature ideas, or Obsidian enhancements.
 
 ## License
 
@@ -71,4 +79,4 @@ MIT © [Virtuallaborer](https://github.com/Virtuallaborer)
 
 ---
 
-**Made for solopreneurs, knowledge workers, and AI enthusiasts.**
+**Built for solopreneurs, knowledge workers, and AI tinkerers.**
